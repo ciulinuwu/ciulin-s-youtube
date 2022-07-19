@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ciulin's YouTube
 // @namespace    https://www.youtube.com/*
-// @version      0.5.28
+// @version      0.5.29
 // @description  Broadcast Yourself
 // @author       CiulinUwU
 // @updateURL    https://github.com/ciulinuwu/ciulin-s-youtube/raw/main/Ciulin's%20YouTube.user.js
@@ -45,6 +45,7 @@
         playbarScrub: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVChTjZHNjkRQEIUP4p+dVe/EC9iJhQgvLlYsvQC2JFaIIOH21G09s5CZnpNclZz66kdKwKVt21hd1xiG4XJechwHnudBVVXO8s88zyzPcxzHAUH47sHFGIMkSYjjGJZlCQJ1LooC+75D0zSs63qLJEVREIYhxKZpeGcyoiiCLMu3+LUOzvMEsWLXdTAMg5u/iXLE9H0PkXYk468Cmk6Ppoj0Q58K3nli+Ur/LSBW1HWdj/pUQAyxYpqmqKqKm+M44vF43CLliCGWX6ltW0ZGEAQwTZN3fWtZFpRlCd/34bruz1np2lmWYZqmy3nJtm0kScKvDABP3bl3Ot4gE8wAAAAASUVORK5CYII=",
         playerSheet: "data:image/png;base64,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",
         playbarSheet: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAZCAIAAAB/8tMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhSURBVBhXY7h69SoTCDAzMxNNMzAwgNmMjIyEMMP///8BIN0GJrVyhfoAAAAASUVORK5CYII=",
+        playerSheetB: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAC0CAMAAABVAnlJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqUExURXt7e5OTk3R0dG5ubm1tbWxsbGtra2pqamlpaWhoaGdnZ2ZmZmVlZWRkZBISEhkZGQwMDAsLCzIyMkFBQYuLiygoKHp6enBwcDY2NjAwMEtLS29vbyMjI4ODg42NjYmJiScnJ1VVVXZ2dltbW0NDQyEhIRsbG15eXg0NDVdXVz09PRQUFBYWFikpKV1dXR4eHh0dHRUVFRoaGhwcHGFhYTo6Ojw8PEJCQkRERIKCgo6OjhMTExcXFyYmJgYGBkVFRUxMTDMzMxEREQ8PDwoKCiAgIAgICF9fX3l5eXd3d0lJSX19fQAAADg4OHNzc1RUVE1NTWBgYCQkJA4ODj8/Px8fHwICAoCAgJubm39/f5CQkHh4eFFRUUpKSiIiInV1dXJyckBAQAcHBysrK0ZGRlBQUE9PTxAQEHFxcYWFhVxcXDU1NWJiYjQ0NAkJCRgYGEdHR4yMjJaWloSEhHx8fFNTUwUFBQQEBAEBAS8vL4eHh4qKijExMZGRkTc3N4GBgWNjY35+fi4uLj4+Pjk5OVJSUgMDA1ZWVi0tLVhYWCUlJU5OTpSUlAAAAOO27awAAACOdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wCbnvR6AAAACXBIWXMAAA7CAAAOwgEVKEqAAAAFk0lEQVR4Xu2b+VcTVxTHr5klmVAIICoIYa0hQZDdgsFUQkSWuCBi2iq4sLRVQdq61Na2LrW1y/ufe+fNDUmY03PI8V5+8MznHOa+d+858z0E3nzfe/MCcOQIKKUoyAAhwwhhpCADmAhGCjKAhWCkIMPhiNgIRgoyQBjBSEEGiCAYKcgADoKRggyHIxJFMFKQAWoQjBRkgE8QjBRkgFoEIwUZoC4Wi2GkIAPUNzQ0YKQgg5yJlBGIVAWJNB492ui1JCARs6lJzn1J5NjxEyeOH9NNCUA1tyh1shU52dbW0kxpXkDF2ztCYCDxUEd7vJPyrECXYbZ2G+6MyOxuNY0uyrMCPe48pfbTU4lEr9vqoTwrkEzhrfsaTvf3D7hqScqzAomGM7Y9OITU4axoOEF5VkCNdIXD/aMuOCvqH6E8K6DGcDI0nkDOYqNX5jc5043zFKMvFuszsNH9GeVZgQl3MmRNnjs3abmtXsqzAml3MlRiivKsQPr8+frM5+6M6EIsNn0+S3lWQCWTdWrKnRH1z8zkRIYJirjMpGprUzO6KQH5ycXGxoteSwISaZidlZsRFUVkCUSqwhXpM0OhkNnnJSRAkUsdc/Pz83MdlyjFD6iFRbT3PP4sLlCOHbgcd6190L3EL1OSG4i6t7eG9FVqaQpX3A0Pe1Rfr1CSG73tEQ4nvEBJbvS2RyQyclUHSnID11zTdZZyV/F6jZLcwHUt0n0hN+Y41ynJDSzf0N4eGotGbyxTkhtQs9OuwdeEa6ZnKccOPlZyKyl0+NRKjlL8uA/I+pv5fP5mvZeQ4NAe9eIEIlVxOCJt1wodJQpOGxU4gZ4v4l+WiH8lsUkIt0zzNq7lVs3etUSi2TTvUIETuGJZyWQik7E6M4lkPmXdpQInYFmpzGohcq/3/nrhzsamyAsOsO2tWNSeK9hf37a/+dYSecGBHn97dCH84OGDkebwo4dbIj6PHm+fSm8n05GJ3PZIvkfE5wFd9+5sfsdxJh/nb25GnDEqcAK7jlP4DjpMp/V7+OGJ4+xSgROof6o9vshSmgqcwDN0xXKeU4ETqHtOd/f4UWK3IPCTqghEqqIkMvGCGvwURTprfmqnJj8kMj13XPJkgXsZ3Pr5Li5+ldrFx+PLM7rACZz9BSnoFbYaj8d/bfntSYpqbMCqXlxrVNsr+3XBst9QjQ146y2uXVT//S7bfpRmf0bCuF5ba/B/7BGGaSrxAb/r1a9GDSw6Y2MO3KAaG9B5AfFcUb1ZWkqnn0YnqMYGLD9DYktaZDmdzmZ3VnaoxoY3GGeS73CVrVQW/+Zp/tU8jfjsH28lTxZQVJnBQWrxsyeigpf+B+BjFAns9wBokT37FaLCfqWosF8pKuxXikr7FaLCfqWosF8pKuxXCm8wFu1XCBrxgf0ejJKIIIFIVZREAvs9AJ4I2e/Any8HJY7gVNjv2dehIRGRcvvNbp3YHqUCJ5X2ux4+KXHAq9J+1yPjEkfVKu33krP2mAqclNvv1Lj5NCvyhy+z3+GpjeFhkY9LXz37Ha7LZId1nxka8YH9HoySiCCBSFWURDz7vRd6uLam+4wURYr2uzEff39KZxghkT37nfnLeLWiU4x4IuX2a90a0DlG/Pa7abGfWPPb72Wb/di7335fhPlFfPb7d+QfqrHht99mh/0ct99+30XXqcaG336dpTqqseGNkzL73appZH/HTCO+aL+nG+dTYjvce/b7fpX/9UlJhOw391zgQHpJRJBApCrgXxfqIPu6PID7Da1W6iD7ujyAYeTzeeog2DEMarMB/pU1/1ob/HvO/syHAuWflYc/86EEg7EqPiKRdt82lz/zoYB/Y5t/qxv8K2v+tTbU1jY1NVEHwQ7/d9j19+PL7rqvywM+VvY/hYPHyv8TiFSBUv8BuQ1yihXBMNIAAAAASUVORK5CYII=",
         playbarShadow: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAZCAIAAACZ2xhsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVChTY1y2bJm4uLiAgAA3NzcTAxgwggGIA2UBwWCRgQAMZXCA0AMECBkEB8gCkthkIIB0AxgZAbxaA1A95vt3AAAAAElFTkSuQmCC",
         playbarSeeker: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAaCAYAAAB2BDbRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABQSURBVBhXbYqxDYAwEANP7kkmyDBZiDYTsUK2oosUpTK8oEK4OFu22UsxB1gJ0HaDs3eHQ2vNqrWinDNKKU6htZZlmy9ifNIYA8053+4fcAGeySL/5lJgnAAAAABJRU5ErkJggg==",
         playbarSeek: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAIAAADAusJtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZSURBVBhXYzhy5AiToKAgw5s3bxi+f/8OADiwCCtHhAKiAAAAAElFTkSuQmCC",
@@ -721,7 +722,7 @@
             }
             document.querySelector("#comments-loading").classList.remove("hid");
             let api = await document.ciulinYT.func.getApi("/youtubei/v1/next", `continuation: "${continuation}"`);
-            let collection = api.onResponseReceivedEndpoints[1] ? api.onResponseReceivedEndpoints[1].reloadContinuationItemsCommand.continuationItems : api.onResponseReceivedEndpoints[0].appendContinuationItemsAction.continuationItems;
+            let collection = api.onResponseReceivedEndpoints[1] ? api.onResponseReceivedEndpoints[1].reloadContinuationItemsCommand.continuationItems ? api.onResponseReceivedEndpoints[1].reloadContinuationItemsCommand.continuationItems : [] : [];
             //document.querySelector("#session").value = api.onResponseReceivedEndpoints[0].reloadContinuationItemsCommand.continuationItems[0].commentsHeaderRenderer.createRenderer.commentSimpleboxRenderer.aadcGuidelinesStateEntityKey;
             let result = {result: "", con: ""};
             let ana = () => {
@@ -873,8 +874,12 @@
 </span>
 </div>
 <ul class="playbar-controls right">
-<li class="playbar-controls_icon playbar-controls_resize" data-state="0">
-<i class="playbar-icon playbar-icon_resize"></i>
+<li class="playbar-controls_icon playbar-controls_cc">
+<i class="playbar-icon playbar-icon_cc"></i>
+</li><li class="playbar-controls_icon playbar-controls_settings">
+<i class="playbar-icon playbar-icon_settings"></i>
+</li><li class="playbar-controls_icon playbar-controls_watchlater">
+<i class="playbar-icon playbar-icon_watchlater"></i>
 </li><li class="playbar-controls_icon playbar-controls_fullscreen" data-state="0">
 <i class="playbar-icon playbar-icon_fullscreen"></i>
 </li>
@@ -1330,6 +1335,250 @@ transform: scale(3.1);
                 a.innerText = script;
                 ELEMENT.appendChild(a);
             })();
+            document.ciulinYT.func.deezMews = () => {
+                var a = document.querySelector(".player-style");
+                let script = `body {margin:0}
+* {
+    --lld: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(39,39,39,1) 100%);
+    --lll: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(49,49,49,1) 100%);
+    --llr: linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(29,29,29,1) 100%);
+    --llRED: linear-gradient(0deg, rgba(195,0,0,1) 0%, rgba(108,0,0,1) 100%);
+    --texture-playbar: url(${document.ciulinYT.data.playerSheetB}) no-repeat;
+}
+.hid {
+    display: none;
+}
+.right {
+    position: absolute;
+    right: 0;
+}
+.playmenu-container {
+    display: none;
+}
+#video-player {
+    display: block;
+    width: 640px;
+    height: 390px;
+    background-color: black;
+}
+#video-player .player {
+    width: inherit;
+    height: inherit;
+}
+#video-player .video-container {
+    height: 359px;
+    width: inherit;
+    position: relative;
+    z-index: 1;
+}
+#video-player:fullscreen .video-container {
+    height: 97%;
+}
+#video-player:fullscreen #video-main-content {
+    height: 100%;
+}
+#video-player #video-main-content {
+    position: relative;
+    z-index: -1;
+    width: inherit;
+}
+#video-player .video-blank {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#video-player .video-scrubbar {
+    z-index: 2;
+    background-color: #222;
+    position: relative;
+    cursor: pointer;
+    height: 3px;
+    user-select: none;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid black;
+}
+#video-player:hover .video-scrubbar {
+    height: 7px;
+    margin-top: -4px;
+    position: relative;
+    transition: 0.1s;
+}
+#video-player .scrubbar_track_played {
+    height: 7px;
+    background: var(--llRED);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+#video-player .scrubbar_track_handle {
+    z-index: 100;
+}
+#video-player .video-playbar {
+    display: flex;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    border-top: 1px solid #484646;
+    border-bottom: 1px solid #0b0b0b;
+    background: var(--lld);
+    z-index: 3;
+}
+#video-player .playbar-controls {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    line-height: inherit;
+    display: flex;
+}
+#video-player .playbar-controls_icon {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    height: inherit;
+    margin: 0 1px;
+    border: 0;
+    position: relative;
+}
+#video-player .playbar-controls_icon::before, #video-player .playbar-controls_icon::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: inherit
+}
+#video-player .playbar-controls_icon::before {
+    left: -1px;
+    background: var(--lll);
+}
+#video-player .playbar-controls_icon::after {
+    right: -1px;
+    background: var(--llr);
+}
+#video-player .playbar-icon {
+    background: var(--texture-playbar);
+    display: inline-block;
+    margin-left: auto;
+}
+#video-player .playbar-icon.playbar-icon_play {
+    height: 16px;
+    width: 11px;
+    margin-right: auto;
+}
+#video-player .playbar-controls_volume[data-state^="0"] .playbar-icon.playbar-icon_volume {
+    background-position: 0px -83px;
+}
+#video-player .playbar-controls_volume[data-state^="1"] .playbar-icon.playbar-icon_volume {
+    background-position: 0px -102px;
+}
+#video-player .playbar-controls_volume[data-state^="2"] .playbar-icon.playbar-icon_volume {
+    background-position: 0px -121px;
+}
+#video-player .playbar-controls_volume[data-state^="3"] {
+    margin-top: -1px;
+}
+#video-player .playbar-controls_volume[data-state^="3"] .playbar-icon.playbar-icon_volume {
+    background-position: 0px -139px;
+}
+#video-player .playbar-icon.playbar-icon_settings {
+    background-position: 0px -19px;
+    height: 19px;
+    width: 16px;
+    margin-right: auto;
+}
+#video-player .playbar-icon.playbar-icon_watchlater {
+    background-position: 0px -43px;
+    height: 14px;
+    width: 13px;
+    margin-right: auto;
+}
+#video-player .playbar-icon.playbar-icon_cc {
+    background-position: 0px -63px;
+    height: 13px;
+    width: 17px;
+    margin-right: auto;
+}
+#video-player .playbar-icon.playbar-icon_fullscreen {
+    background-position: 0px -158px;
+    height: 17px;
+    width: 20px;
+    margin-right: auto;
+}
+#video-player .playbar-volume_slider-container {
+    display: none;
+    width: 0px;
+}
+#video-player .playbar-timestamp_container {
+    margin: 0 1px;
+    border: 0;
+    position: relative;
+    height: inherit;
+}
+#video-player .playbar-timestamp_container::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: inherit
+}
+#video-player .playbar-timestamp_container::before {
+    background: var(--lll);
+    left: -1px;
+}
+#video-player a {
+    color: white;
+    cursor: default;
+    text-decoration: none;
+}
+#video-player .playbar-volume_container {
+    height: inherit;
+    width: inherit;
+    display: flex;
+}
+#video-player .playbar-volume_container:hover .playbar-volume_slider-container {
+    display: flex;
+    width: 60px;
+}
+#video-player .playbar-controls_play {
+    width: 55px;
+}
+#video-player .playbar-icon_volume {
+    height: 15px;
+    width: 20px;
+}
+#video-player #playbar-seek {
+    -webkit-appearance: none;
+    width: inherit;
+    height: 4px;
+    outline: none;
+    max-width: 53px;
+}
+#video-player .playbar-controls_play::before {
+    background: none;
+}
+#video-player .playbar-controls_cc::before {
+    background: none;
+}
+#video-player .playbar-timestamp {
+    font-size: 10px;
+    padding: 6px;
+    color: gray;
+}
+#video-player #timestamp_total {
+    color: gray;
+}`;
+                script = script.replace(/(?:\r\n|\r|\n)/g, "");
+                a.innerText = script;
+                ELEMENT.appendChild(a);
+            };
+            //document.ciulinYT.func.deezMews();
             (() => {
                 var tag = document.createElement('script');
                 tag.src = "https://www.youtube.com/iframe_api";
@@ -1725,7 +1974,7 @@ document.querySelector(".playbar-controls_play").setAttribute("data-state", "0")
             var tminute = Math.floor(length % 3600 / 60);
             var tsecond = Math.floor(length % 3600 % 60);
             tsecond = tsecond <= 9 ? ("0" + tsecond) : (tsecond);
-            tminute = length >= 3600 ? ("0" + tminute) : (tminute);
+            tminute = length >= 600000 ? ("0" + tminute) : (tminute);
             hours = length >= 3600 ? (thours + ":") : "";
             return hours + "" + tminute + ":" + tsecond;
         },
@@ -2538,6 +2787,13 @@ ${OBJ_CHANCON}
         document.ciulinYT.func.waitForElm(".ytp-pause-overlay").then((elm) => {elm.parentNode.removeChild(elm);});
         return;
     }
+    if(window.location.pathname.split("/")[1] == "watch"){
+        let elm = document.querySelector(".video-stream.html5-main-video");
+        elm.pause();
+        elm.src = "";
+        elm.play();
+        elm.parentNode.removeChild(elm);
+    }
     async function buildYouTube() {
         var DOMHTML = document.querySelector("html");
         var TIMEDATE = new Date();
@@ -2564,8 +2820,6 @@ ${OBJ_CHANCON}
         DOMBODY.setAttribute("class", `date-${VALUE_DATE} ${VALUE_LANG} ltr ytg-old-clearfix guide-feed-v2 gecko gecko-16`);
         DOMBODY.setAttribute("dir", "ltr");
         DOMHTML.appendChild(DOMBODY);
-
-        document.ciulinYT.func.waitForElm(".video-stream.html5-main-video").then((elm) => elm.parentNode.removeChild(elm));
 
         let OBJ_MASTH = "";
         let OBJ_USER = "";
@@ -2976,7 +3230,7 @@ Loading...
 </div>
 <div id="watch-video-container">
 <div id="watch-video" style="position:inherit">
-<movie-player id="video-player" data-text="hmm"></movie-player>
+<movie-player id="video-player"></movie-player>
 </div>
 </div>
 <div id="watch-main-container">
@@ -3092,7 +3346,7 @@ ${VALUE_VIDEOTAGS}
 </div>
 <div id="comments-view" data-type="highlights" class="">
 <div class="comments-section">
-<h4><strong>All Comments</strong> (${ytInitialData.contents.twoColumnWatchNextResults.results ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer).itemSectionRenderer.contents[0].commentsEntryPointHeaderRenderer ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer).itemSectionRenderer.contents[0].commentsEntryPointHeaderRenderer.commentCount.simpleText : "0" : "0"}) <a class="comments-section-see-all" href="https://www.youtube.com/all_comments?v=${id}">see all</a></h4>
+<h4><strong>All Comments</strong> (${ytInitialData.contents.twoColumnWatchNextResults.results ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer) ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer).itemSectionRenderer.contents[0].commentsEntryPointHeaderRenderer ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer).itemSectionRenderer.contents[0].commentsEntryPointHeaderRenderer.commentCount ? ytInitialData.contents.twoColumnWatchNextResults.results.results.contents.find(b => b.itemSectionRenderer).itemSectionRenderer.contents[0].commentsEntryPointHeaderRenderer.commentCount.simpleText : "0" : "0" : "0" : "0"}) <a class="comments-section-see-all" href="https://www.youtube.com/all_comments?v=${id}">see all</a></h4>
 <div class="comments-post-container clearfix">
 ${commen}
 </div>
